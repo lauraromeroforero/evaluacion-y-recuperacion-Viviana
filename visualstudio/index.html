@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Estudiantes</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box register">
+                <h2>Agregar Estudiante</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                        <input type="number" id="txtid">
+                        <label class="texto">Id:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                        <input type="text" id="txtNombre">
+                        <label class="texto">Nombre:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                        <input type="text" id="txtApellido">
+                        <label class="texto">Apellido:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="document-attach"></ion-icon></span>
+                        <input type="text" id="txtCurso">
+                        <label class="texto">Curso:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="book"></ion-icon></span>
+                        <input type="text" id="txtMateriauno">
+                        <label class="texto">Materia 1:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="book"></ion-icon></span>
+                        <input type="text" id="txtMateriados">
+                        <label class="texto">Materia 2:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="book"></ion-icon></span>
+                        <input type="text" id="txtMateriatres">
+                        <label class="texto">Materia 3:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <input type="text" id="txtNotauno">
+                        <label class="texto">Nota 1:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <input type="text" id="txtNotados">
+                        <label class="texto">Nota 2:</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+                        <input type="text" id="txtNotatres">
+                        <label class="texto">Nota 3:</label>
+                    </div>
+                    <button type="button" id="btnGuardarEstudiante" class="btn btn-dark">Guardar</button><br><br>
+                        <button type="button" id="listarEstudiante" class="btn btn-dark">Listar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-12 mt-3">
+            <br><hr><br><h2>Lista de Estudiantes</h2>
+        </div>
+        <div class="col-12 mt-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOM</th>
+                        <th></th>
+                        <th>APE</th>
+                        <th></th>
+                        <th>CUR</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>M1,M2,M3</th>
+                        <th></th>
+                        <th></th>
+                        <th>N1,N2,N3</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-12 mt-3" id="personas">
+            <table class="table table-striped" id="tabla"></table>
+        </div>
+        <div class="containerdos">
+            <label class="form-label">ID:</label><br>
+            <input type="number" class="form-control " id="idbuscar" placeholder="Ingresa un ID"><br>
+            <button type="button" class="btn btn-dark " id="buscar">BUSCAR </button><br><br>
+            <button type="button" class="btn btn-dark " id="Eliminar">ELIMINAR </button><br><br>
+        </div>
+    </header>
+    <script src="interfaz.js"></script>
+    <script src="funcionalidad.js"></script>
+    <script src="enviar.js"></script>
+    <script src=""></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
